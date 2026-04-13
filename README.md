@@ -41,7 +41,7 @@ Vite (build tool)
 🚀 Quick Start
 
 Clone the repository
-git clone https://github.com/your-username/product-store-app.git
+git clone https://github.com/LimaShirzad/Product-Store.git
 
 Navigate to project folder
 cd product-store-app

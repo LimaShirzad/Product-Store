@@ -1,0 +1,60 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/index.css - add at the very top */
+:root {
+  --primary: #10b981;      /* Emerald green - change this to any color */
+  --primary-dark: #059669;
+  --primary-light: #34d399;
+  --gradient-start: var(--primary);
+  --gradient-end: #3b82f6;  /* Blue accent - change if you want */
+}
+
+.dark {
+  --primary: #34d399;
+  --primary-dark: #10b981;
+  --primary-light: #6ee7b7;
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ease-in-out transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition duration-200;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+  }
+}
+
+
+/* Add to your existing index.css */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.navbar-scrolled {
+  @apply shadow-2xl bg-white/95 dark:bg-gray-900/95;
+}

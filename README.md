@@ -1,4 +1,5 @@
-#Product Store App Product Store App A modern e-commerce app built with React, showcasing three state management techniques: Context API + useReducer, Redux Toolkit, and React Query.
+# Product Store App 
+Product Store App A modern e-commerce app built with React, showcasing three state management techniques: Context API + useReducer, Redux Toolkit, and React Query.
 
 ✨ Features Browse products with loading & error states
 
